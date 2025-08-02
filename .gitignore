@@ -1,0 +1,15 @@
+__pycache__/
+output/
+run_*.py
+*.ipynb
+Custom*/
+custom_flows/
+classified_by_bridge_hop_site/*
+*.json
+*.png
+*.pcap
+*.tar.gz
+*.npz
+*.npy
+*.zip
+*.csv
