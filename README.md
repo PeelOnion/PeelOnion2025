@@ -1,4 +1,6 @@
-# PeelOnion2025
+This repository provides the anonymized source code and dataset associated with submission #2279 to IEEE INFOCOM 2026.  
+All materials have been carefully stripped of identifying metadata to comply with the double-blind review policy.  
+The dataset contains preprocessed encrypted Tor traffic traces used in the experiments described in the submission.
 
-This repository contains the anonymized dataset and source code for submission #2279 to [IEEE INFOCOM 2026]. No identifying information is included to preserve the double-blind review policy.
-
+Access the dataset via the following anonymous link:  
+https://drive.google.com/file/d/17O-SVBFSdjkbuzhSx6p_kz58mXW_grUz/view?usp=sharing
