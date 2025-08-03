@@ -3,7 +3,7 @@
 set -e
 
 
-DATASET=classified_array_exit_0721_dataset_sampled
+DATASET=example_ds
 PRETRAIN_OUT=./output/pretrain
 FINETUNE_OUT=./output/finetune
 
@@ -18,7 +18,7 @@ CUDA_VISIBLE_DEVICES=0 python src/pretrain_allclass.py \
     --data_path ${DATASET} \
     --output_dir ${PRETRAIN_OUT} \
     --log_dir ${PRETRAIN_OUT} \
-    --model net_mamba_pretrain \
+    --model tor_mamba_pretrain \
     --no_amp \
     --input_size 40 \
     --byte_length 1600 \
@@ -39,7 +39,7 @@ CUDA_VISIBLE_DEVICES=0 python src/finetune_allclass.py \
     --finetune ${PRETRAIN_OUT}/checkpoint-step5000.pth \
     --output_dir ${FINETUNE_OUT} \
     --log_dir ${FINETUNE_OUT} \
-    --model net_mamba_classifier \
+    --model tor_mamba_classifier \
     --no_amp \
     --warmup_epochs 5 \
     --weight_decay 0.05 \
